@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registrarse</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/estilos2.css"> 
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<div class="row">
+				<div class="col-md-3 alinearimg">
+					<img src="img/logo-utp.png" class="contenedorimg2">
+				</div>
+				<div class="col-md-2 alinearimg">
+  					<img src="img/escudocol.png" class="contenedorimg3">
+				</div>
+				<div class="col-md-7" class="barra">
+					<ul class="nav">
+  						<li><a href="index.html">Inicio</a></li>
+  						<li><a href="loggin.html">Iniciar Sesión</a></li>
+  						<li><a href="help.html">Ayuda</a></li>  
+  						<form>
+						<fieldset>
+							<input type="search">
+							<button type="submit">
+								<i class="fas fa-search"></i>
+							</button>
+						</fieldset>
+					</form>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="Registro">
+		<p id="tituloregistro">Registro</p>
+
+		<form action="" class="dentroregistro">
+			<div class="cod">
+			<label class="labels">Codigo:</label>
+			<input type="text" id="Codigo" name="Codigo" >
+			</div>
+			<div class="nom">
+			<label class="labels">Nombre(s):</label>
+			<input type="text" id="Nombre" name="Nombre" >
+			</div>
+			<div class="ape">
+			<label class="labels">Apellidos:</label>
+			<input type="text" id="Apellido" name="Apellido" >
+			</div>
+			<div class="corre">
+			<label class="labels">Correo Institucional:</label>
+			<input type="mail" id="correoins" name="correoins" placeholder="admin_01@utp.edu.co" >
+			</div>
+			<div class="tel">
+			<label class="labels">Telefono:</label>
+			<select class="custom-select" id="inputGroupSelect01">
+				<option selected>Indicativo</option>
+				<option value="1">Bolivia +591</option>
+				<option value="2">Brasil +55</option>
+				<option value="3">Colombia +57</option>
+				<option value="4">Ecuador +593</option>
+				<option value="5">Paraguay +595</option>
+				<option value="6">Perú +51</option>
+				<option value="7">Uruguay +598</option>
+				<option value="8">Venezuela +58</option>
+			</select>
+			</div>
+			<input type="text" id="Telefono" name="Telefono" >
+			</div>
+			<div class="ciud">
+			<label class="labels">Ciudad:</label>
+			<input type="text" id="Ciudad" name="Ciudad" >
+			</div>
+			<div class="dir">
+			<label class="labels">Dirección:</label>
+			<input type="text" id="Dirección" name="Dirección" >
+			</div>
+			<ul class="nav2">
+				<li><input type="submit" value="Enviar"></li>
+				<li><a href="index.html" id="cancelar">Cancelar</a></li>
+			</ul>
+			
+		</form>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</body>
+</html>
