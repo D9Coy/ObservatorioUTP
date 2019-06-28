@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UTP</title>
+	<!-- Bootstrap core CSS -->
+	<link href="/libs/Bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/index.css" rel="stylesheet">
+	<style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md fixed-top" style="background-color: #6fcff2;">
+		<a class="navbar-brand" href="https://www.utp.edu.co">
+			<img src="/img/logo-utp.png" width="233" height="65" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="barraNavegacion">
+			<ul class="nav navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link active" data-toggle="tab" href="#inicio" role="tab">Inicio
+							<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#iniSesion" role="tab">Iniciar Sesion</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#reg" role="tab">Registrarse</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#ayu" role="tab">Ayuda</a>
+					</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Buscar">
+				<button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+			</form>
+		</div>
+	</nav>
+	<div class="tab-content" id="content">
+		<div class="tab-pane fade show active " id="inicio" role="tabpanel">
+			<div class="iframe-container">
+					<iframe width="1425" height="559" src="/vistas/index2.html"></iframe>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="iniSesion" role="tabpanel">
+			<div class="iframe-container">
+				<iframe width="1425" height="559" src="/vistas/loggin2.html"></iframe>
+			</div>	
+		</div>
+		<div class="tab-pane fade" id="reg" role="tabpanel">
+			<div class="iframe-container">
+				<iframe width="1425" height="1425" src="/vistas/registrer2.html"></iframe>
+			</div>	
+		</div>
+		<div class="tab-pane fade" id="ayu" role="tabpanel">
+			<div class="iframe-container">
+				<iframe width="1425" height="559" src="/vistas/help2.html"></iframe>
+			</div>	
+		</div>
+	</div>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="/libs/jquery/jquery-3.4.0.js"></script>
+<!-- Popper.JS -->
+<script src="/libs/Popper/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="/libs/Bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>

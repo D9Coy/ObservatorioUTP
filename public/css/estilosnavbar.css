@@ -1,0 +1,64 @@
+.navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+input[type="text"]{
+	margin-top: 7%;
+	margin-right: 5%;
+	align-items: center;
+	width:200px;
+	height: auto;
+	outline: none;
+	border:0px;
+	color: black;
+	font-size: 1em;
+	border-radius: 5px;
+	padding-left: 5%;
+}
+
+input[type="button"]{
+	margin-top: 15%;
+	align-items: center;
+	width:100px;
+	height: auto;
+	outline: none;
+	border:0px;
+	color: black;
+	font-size: 1em;
+	border-radius: 5px;
+	padding-left: 5%;
+}
+
+#escudocol{
+	margin-top: -30%;
+}
+
+#escudoutp{
+	margin-top: -5%;
+}
+
+a:hover{
+	background:#6fcff2;
+	color: black;
+}
+
+button[type="submit"]{
+	margin-top: 7%;
+
+}
+
+iframe {
+	width: 1600px;
+	height: 757px;
+	max-width: 2560px;
+	max-height: 1600px;
+	min-height: 400px;
+	min-width: 400px; 
+	display: none;
+}
+
+#iframeindex2 {
+	display: block;
+}

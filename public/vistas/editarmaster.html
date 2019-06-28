@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Editar Master</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="css/estiloseditmaster.css">
+  	<script src="js/popper.min.js"></script>
+</head>
+<body>
+	<section id="EditarPerfilMaster">
+		<p id="tituloEditarPerfilMaster">Editar Perfil Máster</p>
+		<form action="" class="dentroEditarPerfilMaster">
+			<div class="center">
+			<img src="img/neutralidad.png" class="Imgperfil">
+			<button type="submit" value="Cambiar" id="cambiarImagen">Cambiar Imagen de Perfil</button>
+			</div>
+			<div class="cod">
+			<label class="labels">Codigo:</label>
+			<input type="text" id="Codigo" name="Codigo" >
+			</div>
+			<div class="nom">
+			<label class="labels">Nombre(s):</label>
+			<input type="text" id="Nombre" name="Nombre" >
+			</div>
+			<div class="ape">
+			<label class="labels">Apellidos:</label>
+			<input type="text" id="Apellido" name="Apellido" >
+			</div>
+			<div class="corre">
+			<label class="labels">Correo Institucional:</label>
+			<input type="mail" id="correoins" name="correoins" placeholder="admin_01@utp.edu.co" >
+			</div>
+			<div class="tel">
+			<label class="labels">Telefono:</label>
+			<select class="custom-select" id="Indicativos">
+				<option selected>Indicativo</option>
+				<option value="1">Bolivia +591</option>
+				<option value="2">Brasil +55</option>
+				<option value="3">Colombia +57</option>
+				<option value="4">Ecuador +593</option>
+				<option value="5">Paraguay +595</option>
+				<option value="6">Perú +51</option>
+				<option value="7">Uruguay +598</option>
+				<option value="8">Venezuela +58</option><!-- Indicativo telefono -->
+			</select>
+			</div>
+			<input type="text" id="Telefono" name="Telefono" >
+			</div>
+			<div class="Carrera">
+			<label class="labels">Carrera:</label>
+			<select class="custom-select" id="Carreras">
+				<option selected>Seleccionar Carrera</option>
+				<option value="1">Licenciatura en Artes Visuales</option>
+				<option value="2">Licenciatura en Bilinguismo con énfasis en ingles</option>
+				<option value="3">Licenciatura en Filosofia</option>
+				<option value="4">Licenciatura en Musica</option>
+				<option value="5">Administración Ambiental</option>
+				<option value="6">Administración Turismo Sostenible ciclo profesional</option>
+				<option value="7">Administración del Turismo Sostenible Ciclo Tecnológico</option>
+				<option value="8">Licenciatura en Comunicación e Informática Educativa</option>
+				<option value="9">Licenciatura en Educación Básica Primaria</option>
+				<option value="10">Licenciatura en Etnoeducación</option>
+				<option value="11">Licenciatura en Literatura y Lengua Castellana</option>
+				<option value="12">Licenciatura en Pedagogía Infantil</option>
+				<option value="13">Licenciatura en Tecnología</option>
+				<option value="14">Ciencias del Deporte y la Recreación</option>
+				<option value="15">Medicina</option>
+				<option value="16">Medicina Veterinaria y zootecnia</option>
+				<option value="17">Tecnología en Atención Prehospitalaria</option>
+				<option value="18">Ingeniería Industrial</option>
+				<option value="19">Ingeniería Mecánica</option>
+				<option value="20">Ingeniería Electrónica</option>
+				<option value="21">Ingeniería Eléctrica</option>
+				<option value="22">Ingeniería Física</option>
+				<option value="23">Ingeniería de Sistemas y Computación</option>
+				<option value="24">Tecnología en Desarrollo del Software</option>
+				<option value="25">Administración Industrial</option>
+				<option value="26">Ciclo Tecnológico en Mecatrónica</option>
+				<option value="27">Ciclo Técnico Profesional en Mecatrónica</option>
+				<option value="28">Ingeniería Mecatrónica por ciclos propedéuticos</option>
+				<option value="29">Ingeniería de Manufactura</option>
+				<option value="30">Química Industrial</option>
+				<option value="31">Tecnología Eléctrica</option>
+				<option value="32">Tecnología Industrial</option>
+				<option value="33">Tecnología Mecánica</option>
+				<option value="34">Tecnología Química</option>
+				<option value="35">Ingeniería en Procesos Agroindustriales</option>
+				<option value="36">Ingeniería en Procesos Sostenibles de las Maderas</option>
+				<option value="37">Tecnología en Producción Forestal</option>
+				<option value="38">Tecnología en Producción Hortícola</option>
+				<option value="23">Ingeniería de Sistemas y Computación</option>
+				<option value="24">Tecnología en Desarrollo del Software</option>
+				<option value="25">Administración Industrial</option><!-- Carrera de la que es egresado -->
+			</select>
+			</div>
+			<div class="ciud">
+			<label class="labels">Ciudad:</label>
+			<input type="text" id="Ciudad" name="Ciudad" >
+			</div>
+			<div class="dir">
+			<label class="labels">Dirección:</label>
+			<input type="text" id="Dirección" name="Dirección" >
+			</div>
+			<ul class="nav2">
+				<li><input type="submit" value="Guardar Cambios"></li>
+				<li><a href="index.html" id="cancelar">Cancelar</a></li>
+			</ul>
+		</form>
+	</section>
+	<!----------------Scripts------------------>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

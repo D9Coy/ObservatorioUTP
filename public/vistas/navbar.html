@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/estilosnavbar.css">
+  <script src="js/popper.min.js"></script>
+  <script src="js/funciones.js"></script>
+</head>
+<header>
+	<nav class="navbar navbar-expand-md fixed-top" style="background-color: #6fcff2;">
+		<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="img/logo-utp.png" id="escudoutp" class="img-responsive" alt="Logo"></a>
+		<a class="navbar-brand" href="#"><img src="img/escudocol.png" id="escudocol" class="img-responsive" alt="Logo"></a>
+			<div class="navbar-header">
+			<a class="navbar-brand" href="#"></a>
+			</div>
+			<div class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item" ><input type="button" value="Inicio" onclick="iniciar();"></li>
+					<li class="nav-item" ><input type="button" value="Iniciar Sesión" onclick="Sesión();"></li>
+					<li class="nav-item" ><input type="button" value="Registrarse" onclick="Registrarse();"></li>
+					<li class="nav-item" ><input type="button" value="Ayuda" onclick="Ayuda();"></li>
+					<li><div class="form-group has-search">
+  							<span class="fa fa-search form-control-feedback"></span>
+  							<form action="/action_page.php">
+      							<input type="text" placeholder="Buscar" name="search">
+    						</form>
+						</div>
+  					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<body>
+	<iframe class="embed-responsive-item" id="iframeindex2" src="/vistas/index2.html"></iframe>
+	<iframe class="embed-responsive-item" id="iframelogin2" src="/vistas/loggin2.html"></iframe>
+	<iframe class="embed-responsive-item" id="iframeregistrer2" src="/vistas/registrer2.html"></iframe>
+	<iframe class="embed-responsive-item" id="iframehelp2" src="/vistas/help2.html"></iframe>
+</body>
+
+</html>

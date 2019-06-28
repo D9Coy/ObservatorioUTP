@@ -1,0 +1,26 @@
+body {
+  overflow-x: hidden; 
+}
+
+#dorpapuh {
+	width: 30%;
+	height: 30%;
+}
+
+.contenedortexto {
+	border: none;
+	position: absolute;
+	top:50%;
+	left: 15%;
+	margin-left: -200px;
+	margin-top: -300px;
+	width:90%;
+	min-height: 100px;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.contenedortexto p {
+	font-size: 15px;
+}

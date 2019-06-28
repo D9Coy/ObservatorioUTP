@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="/css/estilosregistrer2.css">
+</head>
+<body>
+	<section id="Registro">
+		<p id="tituloregistro">Registro</p>
+		<form method="post" action="/registro" class="dentroregistro">
+			<div class="cod">
+			<label class="labels">Codigo:</label>
+			<input type="text" id="Codigo" name="codigo" >
+			</div>
+			<div class="nom">
+			<label class="labels">Nombre:</label>
+			<input type="text" id="Nombre" name="nombre" >
+			</div>
+			<div class="corre">
+			<label class="labels">Correo Institucional:</label>
+			<input type="mail" id="correoins" name="correo" placeholder="admin_01@utp.edu.co" >
+			</div>
+			<div class="tel">
+			<label class="labels">Telefono:</label>
+			<select class="custom-select" id="Indicativo">
+				<option selected>Indicativo</option>
+				<option value="1">Bolivia +591</option>
+				<option value="2">Brasil +55</option>
+				<option value="3">Colombia +57</option>
+				<option value="4">Ecuador +593</option>
+				<option value="5">Paraguay +595</option>
+				<option value="6">Perú +51</option>
+				<option value="7">Uruguay +598</option>
+				<option value="8">Venezuela +58</option>
+			</select>
+			</div>
+			<input type="text" id="Telefono" name="telefono" >
+			</div>
+			<div class="Carrera">
+			<label class="labels">Carrera:</label>
+			<select class="custom-select" id="Carreras" name="carrera">
+				<option selected>Seleccionar Carrera</option>
+				<option value="LicArT">Licenciatura en Artes Visuales</option>
+				<option value="LicBil">Licenciatura en Bilinguismo con énfasis en ingles</option>
+				<option value="LicFil">Licenciatura en Filosofia</option>
+				<option value="LicMus">Licenciatura en Musica</option>
+				<option value="AdmonAmb">Administración Ambiental</option>
+				<option value="AdmonTuPro">Administración Turismo Sostenible ciclo profesional</option>
+				<option value="AdmonTuTec">Administración del Turismo Sostenible Ciclo Tecnológico</option>
+				<option value="LicComInf">Licenciatura en Comunicación e Informática Educativa</option>
+				<option value="LicEduPri">Licenciatura en Educación Básica Primaria</option>
+				<option value="LicEtno">Licenciatura en Etnoeducación</option>
+				<option value="LicLit">Licenciatura en Literatura y Lengua Castellana</option>
+				<option value="LicPedg">Licenciatura en Pedagogía Infantil</option>
+				<option value="Lictec">Licenciatura en Tecnología</option>
+				<option value="CienDeRe">Ciencias del Deporte y la Recreación</option>
+				<option value="Medi">Medicina</option>
+				<option value="MedVet">Medicina Veterinaria y zootecnia</option>
+				<option value="ATPH">Tecnología en Atención Prehospitalaria</option>
+				<option value="IngInd">Ingeniería Industrial</option>
+				<option value="IngMec">Ingeniería Mecánica</option>
+				<option value="IngEleco">Ingeniería Electrónica</option>
+				<option value="IngEleci">Ingeniería Eléctrica</option>
+				<option value="IngFis">Ingeniería Física</option>
+				<option value="IngSisCo">Ingeniería de Sistemas y Computación</option>
+				<option value="TecDeSoft">Tecnología en Desarrollo del Software</option>
+				<option value="AdmonInd">Administración Industrial</option>
+				<option value="CiTecMec">Ciclo Tecnológico en Mecatrónica</option>
+				<option value="CiTecProMe">Ciclo Técnico Profesional en Mecatrónica</option>
+				<option value="IngMecPro">Ingeniería Mecatrónica por ciclos propedéuticos</option>
+				<option value="IngManu">Ingeniería de Manufactura</option>
+				<option value="Quimc">Química Industrial</option>
+				<option value="TecElec">Tecnología Eléctrica</option>
+				<option value="TecIndus">Tecnología Industrial</option>
+				<option value="TecMec">Tecnología Mecánica</option>
+				<option value="TecQui">Tecnología Química</option>
+				<option value="IngProAgro">Ingeniería en Procesos Agroindustriales</option>
+				<option value="IngProcMade">Ingeniería en Procesos Sostenibles de las Maderas</option>
+				<option value="IngProFor">Tecnología en Producción Forestal</option>
+				<option value="TecProHort">Tecnología en Producción Hortícola</option>
+			</select>
+			</div>
+			<div class="ciud">
+			<label class="labels">Ciudad:</label>
+			<input type="text" id="Ciudad" name="ciudad" >
+			</div>
+			<div class="dir">
+			<label class="labels">Dirección:</label>
+			<input type="text" id="Dirección" name="direccion" >
+			</div>
+			<ul class="nav2">
+				<li><input type="submit" value="Enviar"></li>
+				<li><a href="#" id="cancelar">Cancelar</a></li>
+			</ul>
+			
+		</form>
+	</section>
+<!---------------Scripts-------------------->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Administradores</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="css/estilosAdministradores.css">
+  	<script src="js/popper.min.js"></script>
+  	<script src="js/funcionesadmins.js"></script>
+</head>
+<body>
+	<h3>Administradores del Observatorio UTP</h3>
+	<div class="container">
+    <div class="row">
+        <div class="col-6 mt-3" id="carta1">
+            <div class="card">
+                <div class="card-horizontal">
+                    <div class="img-square-wrapper">
+                        <img src="img/icono.png" id="fotoadmin" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Aqui deberia ir el nombre del Admin, no se como ponerlo o si es back :v</h4>
+                        <p class="card-text">Aqui en un principio deberia de ir texto, pero no se si seria mejor que con un label o algo apareciera información como es administrador de q facultad o la carrera de la que es egresado,etc.
+                        Basicamente toca q de la BD saque esos datos y los ponga solo en modo lectura</p>
+                        <div><label class="labels">Codigo:</label>
+						<input type="text" name="Codigo" Value="De la base de datos" readonly>
+						<label class="labels">Nombre:</label>
+						<input type="text" id="Nombre" name="Nombre" readonly>
+						<label class="labels">Apellido:</label>
+						<input type="text" id="Apellido" name="Apellido" readonly>
+						<label class="labels">Carrera:</label>
+						<input type="text" id="Carrera" name="Carrera" readonly>
+						<label class="labels">Telefono:</label>
+						<input type="text" id="Telefono" name="Telefono" readonly>
+						<label class="labels">Correo:</label>
+						<input type="text" id="Correo" name="Correo" readonly>
+						<label class="labels">Dirección:</label>
+						<input type="text" id="Dirección" name="Dirección" readonly>
+						</div>
+                    </div>
+                </div>
+                <div class="card-footer"> 
+                <!-- Basicamente este boton es para redirecionarlo a una copia de la vista de crear administrador, pero
+                	que ya tenga información cargada del administrador en cuestion que se quiere editar y le permita
+                	cambiar esa información y simplemente guardarla-->
+                    <a class="btn btn-primary" href="#" role="button">Editar</a>
+                <!-- en este boton saldriauna alerta para corroborar que desea eliminar a ese administrador,
+                	eso deberia quedar registrado en alguna parte y eventualmente eliminarlo de la BD-->
+                    <button type="button"class="btn btn-primary" id="eliminar" value="Eliminar" onclick="Alerta();">Eliminar</button>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+<!----------------Scripts------------------>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
